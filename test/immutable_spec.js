@@ -24,6 +24,7 @@ describe('immutability', () => {
         'Sunshine'
         )
       }));
+      
       expect(state).to.equal(Map({
         movies: List.of(
         'Trainspotting',
