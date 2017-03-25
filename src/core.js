@@ -1,4 +1,4 @@
-Import {List, Map} from 'immutable';
+import {List, Map} from 'immutable';
 
 export const INITIAL_STATE = Map();
 
@@ -7,7 +7,7 @@ export function setEntries(state, entries) {
 }
 
 export function next(state) {
-	const entries = state.get('entries');
+	const entries = state.get('entries')
 						 .concat(getWinners(state.get('entries')));
 	if(entries.size === 1) {
 		state.remove('vote')
